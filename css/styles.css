@@ -1,0 +1,26 @@
+body {
+    background-color: #333
+}
+
+div#display {
+    background-color: #404040;
+    border: 1px solid ;
+    box-shadow: inset 0 0 0.5em #555;
+    height: 250px;
+    margin-top: 2em;
+}
+
+p#text {
+    margin: 0.25em 0em 0em 0.5em;
+    color: #e6e6e6;
+    font-family: monospace;
+}
+
+input[name=enter-text] {
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+ul {
+    color: #e6e6e6
+}

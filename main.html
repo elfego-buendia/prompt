@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Prompt Statement Editor</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="application/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="application/javascript" src="js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="display">
+                        <p id="text">prompt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">                    
+                    <form role="form" class="inline-form" onsubmit="false">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="enter-text" autocomplete="off" />
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><code>\[</code></li>
+                            <li><code>\u</code></li>
+                            <li><code>\w</code></li>
+                            <li><code>\h</code></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>green</li>
+                            <li>red</li>
+                            <li>light grey</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
