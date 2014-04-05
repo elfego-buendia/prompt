@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <script type="application/javascript" src="js/jquery-1.11.0.min.js"></script>
         <script type="application/javascript" src="js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="js/AEC.js"></script>
         <script type="application/javascript" src="js/script.js"></script>
     </head>
     <body>
@@ -19,9 +20,14 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">                    
-                    <form role="form" class="inline-form" onsubmit="false">
+                    <form role="form" class="inline-form mform" onsubmit="false">
                         <div class="form-group">
+                            <div class="input-group">
                             <input class="form-control" type="text" name="enter-text" autocomplete="off" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" id="submit" type="button">Go</button>
+                            </span>
+                            </div>
                         </div>
                     </form>
                     

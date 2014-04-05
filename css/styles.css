@@ -16,8 +16,10 @@ p#text {
     font-family: monospace;
 }
 
-input[name=enter-text] {
+form.mform {
     margin-top: 10px;
+}
+input[name=enter-text] {
     font-family: monospace;
 }
 
