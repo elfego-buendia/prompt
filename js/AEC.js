@@ -40,15 +40,26 @@ function AEC (s) {
         
         if (modi) {
             clss.push(modi);
-        } else if (colr) {
+        }
+        if (colr) {
             clss.push(colr);
-        } else if (bkgc) {
+        }
+        if (bkgc) {
             clss.push(bkgc);
         }
     } construct();
     
     this.getType = function() {
         return type;
+    }
+    this.getModi = function() {
+        return modi;
+    }
+    this.getColor = function() {
+        return colr;
+    }
+    this.getBG = function() {
+        return bkgc;
     }
     this.getClass = function() {
         return clss;

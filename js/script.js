@@ -34,10 +34,16 @@ function parse(txt) {
     // ((0|1|4);)?((3[0-7]);)?(3|4)[0-7]m
     var re = /((4[0-7])|((0|1|4);3[0-7])|((0|1|4);3[0-7];4[0-7]))m/g;
     var marray = parsedIntoHTML.match(re);
+    for (var color in marray) {
+        var acolor = marray[color];
+        var tmp = new AEC(acolor);
+        parsedIntoHTML = parsedIntoHTML.replace(acolor, tmp.getClass().join(' ')+'"');
+    }
+    /*
     console.log(marray);
     var testaec = new AEC(marray[0]);
-    console.log(testaec.getType() + " ::: " + testaec.getClass());
-    
+    console.log(testaec.getClass());
+    */
     
     /********************
     * replace constants *
@@ -69,8 +75,8 @@ $(document).ready(function () {
     // then display in the display div
     $('input[name=enter-text]').keypress(function (event) {
         if (event.which === 13) {
-            console.log(parse($(this).val()));
-            $('p#text').text($(this).val());
+            var pHTML = parse($(this).val())
+            $('p#text').html(pHTML);
             event.preventDefault();
         }
     });

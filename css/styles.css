@@ -26,3 +26,28 @@ input[name=enter-text] {
 ul {
     color: #e6e6e6
 }
+
+span.black {
+    color: black;
+}
+span.red {
+    color: red;
+}
+span.green {
+    color: green;
+}
+span.yellow {
+    color: yellow;
+}
+span.blue {
+    color: blue;
+}
+span.purple {
+    color: purple;
+}
+span.cyan {
+    color: cyan;
+}
+span.white {
+    color: white;
+}
