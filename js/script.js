@@ -12,23 +12,20 @@ function parse(txt) {
     /*************************
     * replace with html tags *
     *************************/
-    // replace all \[ with <span
-    parsedIntoHTML = parsedIntoHTML.replace(/\\\[(?!\\e\[0m)/g, '<span ');
-    //parsedIntoHTML = parsedIntoHTML.replace(/\\\[(?!\\e\[0m)/g, '<');
+    // replace all \[ with <
+    parsedIntoHTML = parsedIntoHTML.replace(/\\\[/g, '<');
     
-    // replace all \[e
-    parsedIntoHTML = parsedIntoHTML.replace(/\\e\[(?!0m)/g, 'class="');
-    //parsedIntoHTML = parsedIntoHTML.replace(/\\e\[(?!0m)/g, 'span ');
+    // replace all \[e with span
+    parsedIntoHTML = parsedIntoHTML.replace(/\\e\[(?!0m)/g, 'span');
     
-    // replace all x;xxm with color
-    parsedIntoHTML = parsedIntoHTML.replace(/(0|1);\d{2}m/g, 'color');
-    //parsedIntoHTML = parsedIntoHTML.replace(/(0|1);\d{2}m/g, '');
-    
-    // replace all the \]
+    // replace all the \] with >
     parsedIntoHTML = parsedIntoHTML.replace(/\\\]/g, '>');
 
-    // replace all the \[\e[0m\]
-    parsedIntoHTML = parsedIntoHTML.replace(/\\\[\\e\[0m/g, '</span');
+    // replace all the \[\e[0m\] with /span
+    parsedIntoHTML = parsedIntoHTML.replace(/\\e\[0m/g, '/span');
+    
+    // debug
+    console.log('first parse: ' + parsedIntoHTML);
     
     
     /*********************
@@ -37,16 +34,19 @@ function parse(txt) {
     // ((0|1|4);)?((3[0-7]);)?(3|4)[0-7]m
     var re = /((4[0-7])|((0|1|4);3[0-7])|((0|1|4);3[0-7];4[0-7]))m/g;
     var marray = parsedIntoHTML.match(re);
+    
+    // debug
+    console.log(marray);
+    
     for (var color in marray) {
         var acolor = marray[color];
         var tmp = new AEC(acolor);
-        parsedIntoHTML = parsedIntoHTML.replace(acolor, tmp.getClass().join(' ')+'"');
+        
+        console.log(tmp);
+        var clss = tmp.getClass().join(' ');
+        clss = ' class="' + clss + '" ';
+        parsedIntoHTML = parsedIntoHTML.replace(acolor, clss);
     }
-    /*
-    console.log(marray);
-    var testaec = new AEC(marray[0]);
-    console.log(testaec.getClass());
-    */
     
     /********************
     * replace constants *
@@ -66,12 +66,6 @@ function parse(txt) {
 
 $(document).ready(function () {
     'use strict';
-    /*
-    $('input[name=enter-text]').on('input', function() {
-        //$('p#text').text(this.value);
-        $('p#text').html(this.value);
-    });
-    */
     
     // enter event for input box
     // its supposed to get text parse
@@ -80,6 +74,7 @@ $(document).ready(function () {
         if (event.which === 13) {
             var pHTML = parse($(this).val())
             $('p#text').html(pHTML);
+            console.log(pHTML);
             event.preventDefault();
         }
     });

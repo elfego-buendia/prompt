@@ -33,7 +33,7 @@ function AEC (s) {
             bkgc = COLORS[sarray[2][sarray.length-2]];
         } else if (type === 'double') {
             modi = MODIFI[sarray[0]];
-            colr = COLORS[sarray[1][sarray.length-2]];
+            colr = COLORS[sarray[1][sarray.length-1]];
         } else if (type === 'single') {
             bkgc = COLORS[sarray[0][sarray.length-2]];
         }
