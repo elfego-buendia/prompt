@@ -14,16 +14,19 @@ function parse(txt) {
     *************************/
     // replace all \[ with <span
     parsedIntoHTML = parsedIntoHTML.replace(/\\\[(?!\\e\[0m)/g, '<span ');
+    //parsedIntoHTML = parsedIntoHTML.replace(/\\\[(?!\\e\[0m)/g, '<');
     
     // replace all \[e
     parsedIntoHTML = parsedIntoHTML.replace(/\\e\[(?!0m)/g, 'class="');
+    //parsedIntoHTML = parsedIntoHTML.replace(/\\e\[(?!0m)/g, 'span ');
     
     // replace all x;xxm with color
-    //parsedIntoHTML = parsedIntoHTML.replace(/(0|1);\d{2}m/g, 'color"');
+    parsedIntoHTML = parsedIntoHTML.replace(/(0|1);\d{2}m/g, 'color');
+    //parsedIntoHTML = parsedIntoHTML.replace(/(0|1);\d{2}m/g, '');
     
     // replace all the \]
     parsedIntoHTML = parsedIntoHTML.replace(/\\\]/g, '>');
-    
+
     // replace all the \[\e[0m\]
     parsedIntoHTML = parsedIntoHTML.replace(/\\\[\\e\[0m/g, '</span');
     
@@ -82,6 +85,5 @@ $(document).ready(function () {
     });
     
     // click event for button
-    $('button#submit').click(function () {
-    });
+    $('button#submit').click(function () {});
 });
