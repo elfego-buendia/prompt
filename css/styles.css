@@ -27,6 +27,10 @@ ul {
     color: #e6e6e6
 }
 
+/***************
+ * span styles *
+ ***************/
+/* for font color */
 span.black {
     color: black;
 }
@@ -50,4 +54,38 @@ span.cyan {
 }
 span.white {
     color: white;
+}
+
+/* for font decoration */
+span.bold {
+    text-decoration: underline;
+}
+span.under {
+    font-weight: bold;
+}
+
+/* for background color*/
+span.bg-black {
+    background-color: black;
+}
+span.bg-red {
+    background-color: red;
+}
+span.bg-green {
+    background-color: green;
+}
+span.bg-yellow {
+    background-color: yellow;
+}
+span.bg-blue {
+    background-color: blue;
+}
+span.bg-purple {
+    background-color: purple;
+}
+span.bg-cyan {
+    background-color: cyan;
+}
+span.bg-white {
+    background-color: white;
 }
