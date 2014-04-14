@@ -1,13 +1,47 @@
 body {
-    background-color: #333
+    background-color: #efefef;
 }
 
+/*********
+ * chome *
+ *********/
+div#chrome {
+    margin-top: 2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-top: 1px solid #333;
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
+    height: 25px;
+}
+
+div#chrome ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+div#chrome ul li {
+    margin: 5px 0px 0px 4px;
+    display: inline-block;
+}
+
+div.circle {
+    border: 1px solid #333;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+
+/***********
+ * display *
+ ***********/
 div#display {
     background-color: #404040;
     border: 1px solid ;
     box-shadow: inset 0 0 0.5em #555;
     height: 250px;
-    margin-top: 2em;
 }
 
 p#text {
@@ -23,50 +57,46 @@ input[name=enter-text] {
     font-family: monospace;
 }
 
-ul {
-    color: #e6e6e6
-}
-
 /***************
  * span styles *
  ***************/
 /* for font color */
 span.black {
-    color: black;
+    color: #818181;
 }
 span.red {
-    color: red;
+    color: #D5A5A4;
 }
 span.green {
-    color: green;
+    color: #91AD92;
 }
 span.yellow {
-    color: yellow;
+    color: #E8D7BA;
 }
 span.blue {
-    color: blue;
+    color: #140EB0;
 }
 span.purple {
-    color: purple;
+    color: #B113B1;
 }
 span.cyan {
-    color: cyan;
+    color: #1DA6B1;
 }
 span.white {
-    color: white;
+    color: #BFBFBF;
 }
 
 /* for font decoration */
 span.bold {
-    text-decoration: underline;
+    font-weight: bold;
 }
 span.under {
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* for background color*/
 span.bg-black {
-    background-color: black;
+    background-color: #818181;
 }
 span.bg-red {
     background-color: red;

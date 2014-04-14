@@ -84,22 +84,22 @@ function parse(txt) {
     parsedIntoHTML = parsedIntoHTML.replace(/\\t/g, DEF_T24);
     
     // replace time12
-    parsedIntoHTML = parsedIntoHTML.replace(/\\u/g, DEF_T12);
+    parsedIntoHTML = parsedIntoHTML.replace(/\\T/g, DEF_T12);
     
     // replace time am/pm
-    parsedIntoHTML = parsedIntoHTML.replace(/\\u/g, DEF_TAM);
+    parsedIntoHTML = parsedIntoHTML.replace(/\\@/g, DEF_TAM);
     
     // replace history #
-    parsedIntoHTML = parsedIntoHTML.replace(/\\u/g, DEF_HNM);
+    parsedIntoHTML = parsedIntoHTML.replace(/\\!/g, DEF_HNM);
     
     // replace command #
-    parsedIntoHTML = parsedIntoHTML.replace(/\\u/g, DEF_CNM);
+    parsedIntoHTML = parsedIntoHTML.replace(/\\#/g, DEF_CNM);
     
     // replace root
-    parsedIntoHTML = parsedIntoHTML.replace(/\\u/g, DEF_RUT);
+    parsedIntoHTML = parsedIntoHTML.replace(/\\\$/g, DEF_RUT);
     
     // replace newline
-    parsedIntoHTML = parsedIntoHTML.replace(/\\u/g, DEF_NWL);
+    parsedIntoHTML = parsedIntoHTML.replace(/\\n/g, DEF_NWL);
     
     return parsedIntoHTML;
 }
