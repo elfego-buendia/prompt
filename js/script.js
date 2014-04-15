@@ -1,7 +1,13 @@
 /*global $, console, parse*/
+var themes;
 
 $(document).ready(function () {
     'use strict';
+    
+    if (navigator.appVersion.indexOf('Mac') === -1) {
+        $('#osx').attr('id', 'linux');
+        $('.circle').removeAttr('class');
+    }
     
     // enter event for input box
     // its supposed to get text parse

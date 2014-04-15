@@ -1,5 +1,5 @@
 body {
-    background-color: #efefef;
+    background-color: white;
 }
 
 /*********
@@ -15,22 +15,37 @@ div#chrome {
     height: 25px;
 }
 
-div#chrome ul {
-    list-style-type: none;
+ul#osx {
+    list-style: none;
     margin: 0;
     padding: 0;
     float: left;
 }
-div#chrome ul li {
-    margin: 5px 0px 0px 4px;
+ul#osx li {
+    margin: 5px 0px 0px 5px;
     display: inline-block;
+    color: rgba(0,0,0,0);
+}
+
+ul#linux {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+ul#linux li {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    padding: 1px 10px 0px 0px;
+    display: inline-block;
+    color: black;
 }
 
 div.circle {
     border: 1px solid #333;
     width: 15px;
     height: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 
@@ -62,16 +77,16 @@ input[name=enter-text] {
  ***************/
 /* for font color */
 span.black {
-    color: #818181;
+    color: #000000;
 }
 span.red {
-    color: #D5A5A4;
+    color: #97050A;
 }
 span.green {
-    color: #91AD92;
+    color: #11A515;
 }
 span.yellow {
-    color: #E8D7BA;
+    color: #989819;
 }
 span.blue {
     color: #140EB0;
