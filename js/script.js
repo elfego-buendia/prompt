@@ -1,6 +1,12 @@
 /*global $, console, parse*/
 var themes;
 
+function handleInput(input) {
+    'use strict';
+    var pHTML = parse(input);
+    $('#text').html(pHTML);
+}
+
 $(document).ready(function () {
     'use strict';
     
@@ -11,17 +17,25 @@ $(document).ready(function () {
     
     $('#terminal').addClass('animated fadeInDown');
     
+    var $input = $('input[name=enter-text]');
+    
     // enter event for input box
     // its supposed to get text parse
     // then display in the display div
-    $('input[name=enter-text]').keypress(function (event) {
+    $input.keypress(function (event) {
         if (event.which === 13) {
-            var pHTML = parse($(this).val());
-            $('p#text').html(pHTML);
+            handleInput($(this).val());
             event.preventDefault();
         }
     });
     
     // click event for button
-    $('button#submit').click(function () {});
+    $('button#submit').click(function () {
+        var input = $input.val();
+        handleInput(input);
+    });
+    
+    $('.example').click(function () {
+        $input.val($(this).text());
+    });
 });

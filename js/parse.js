@@ -1,6 +1,6 @@
 /*global AEC*/
 
-var DEF_USR = "jappleseed";         // \u - user
+var DEF_USR = "elfego";             // \u - user
 var DEF_FPN = "~/Development";      // \w - full working directory
 var DEF_SPN = "Development";        // \W - short working directory
 var DEF_HST = "Macbook-Pro";        // \h - hostname
@@ -16,7 +16,7 @@ var DEF_RUT = "$";                  // \$ - displays $ if not root and # if root
 var DEF_NWL = "\n";                 // \n - newline
 
 
-// \[\e[0;31m\]jappleseed\[\e[0m\] ::: \[\e[0;32m\]>\[\e[0m\] *** example
+// \[\e[0;31m\]\u\[\e[0m\] ::: \[\e[0;32m\]>\[\e[0m\] *** example
 function parse(txt) {
     'use strict';
     var parsedIntoHTML, re, marray, i, acolor, tmp, clss;

@@ -7,6 +7,11 @@ code {
     font-family: "Andale Mono", monospace;
 }
 
+.example {
+    font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
+    cursor: pointer;
+}
+
 /*********
  * chome *
  *********/
@@ -60,7 +65,6 @@ code {
 #display {
     background-color: #404040;
     border: 1px solid ;
-    box-shadow: inset 0 0 0.5em #555;
     height: 250px;
 }
 
