@@ -9,6 +9,8 @@ $(document).ready(function () {
         $('.circle').removeAttr('class');
     }
     
+    $('#terminal').addClass('animated fadeInDown');
+    
     // enter event for input box
     // its supposed to get text parse
     // then display in the display div
