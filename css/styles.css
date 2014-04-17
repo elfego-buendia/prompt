@@ -11,6 +11,9 @@ code {
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
     cursor: pointer;
 }
+.example:hover {
+    color: #498cc8;
+}
 
 /*********
  * chome *

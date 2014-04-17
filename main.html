@@ -17,18 +17,50 @@
         <script type="application/javascript" src="js/script.js"></script>
     </head>
     <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Prompt Editor</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">PS1</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page Style <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Default</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Terminal Style <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Default</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="container">
 			<!-- Terminal -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div id="terminal">
-                    <div id="chrome">
-                        <ul id="osx">
-                            <li><div class="circle">-</div></li>
-                            <li><div class="circle">+</div></li>
-                            <li><div class="circle">x</div></li>
-                        </ul>
-                    </div>
+                        <div id="chrome">
+                            <ul id="osx">
+                                <li><div class="circle">-</div></li>
+                                <li><div class="circle">+</div></li>
+                                <li><div class="circle">x</div></li>
+                            </ul>
+                        </div>
                     <div id="display">
                         <p id="text">prompt ></p>
                     </div>
@@ -55,7 +87,7 @@
             <!-- Examples -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="panel panel-info">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4>Examples <small>Click to use</small></h4>
                         </div>
@@ -71,7 +103,7 @@
                 <div class="col-md-4">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h4>Esacpe Sequences</h4>
+							<h4>Variables</h4>
 						</div>
 		                <ul class="list-group">
 		                	<li class="list-group-item"><code>\[</code> - to begin color code sequence</li>
