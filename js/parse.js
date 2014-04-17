@@ -47,13 +47,15 @@ function parse(txt) {
     // for ever ascii escape sequence in
     // regex matched array make new AEC
     // object to parse/compute correct
-    // styles and color
-    for (i = 0; i < marray.length; i += 1) {
-        acolor = marray[i];
-        tmp = new AEC(acolor);
-        clss = tmp.getClass().join(' ');
-        clss = ' class="' + clss + '"';
-        parsedIntoHTML = parsedIntoHTML.replace(acolor, clss);
+    // styles and color if there any
+    if (marray !== null) {
+        for (i = 0; i < marray.length; i += 1) {
+            acolor = marray[i];
+            tmp = new AEC(acolor);
+            clss = tmp.getClass().join(' ');
+            clss = ' class="' + clss + '"';
+            parsedIntoHTML = parsedIntoHTML.replace(acolor, clss);
+        }
     }
     
     /********************
