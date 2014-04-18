@@ -9,9 +9,6 @@ function handleInput(input) {
 $(document).ready(function () {
     'use strict';
     
-    console.log(navigator.appName + '\n' + navigator.appVersion + '\n' + navigator.userAgent);
-    
-    
     /* changes the terminal chrome */
     if (navigator.appVersion.indexOf('Mac') === -1) {
         $('#osx').attr('id', 'linux');
@@ -22,7 +19,7 @@ $(document).ready(function () {
        accomodates for the status bar by padding the nav */
     if (window.navigator.standalone) {
         $('nav.navbar.navbar-default').css('padding-top', '20px');
-        if (navigator.appVersion.match(/iPhone OS 7/i)) {
+        if (navigator.appVersion.match(/iP(hone|od|ad) OS 7/i)) {
             $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
         }
     }
