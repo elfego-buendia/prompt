@@ -4,7 +4,7 @@ body {
 }
 
 code {
-    font-family: "Andale Mono", monospace;
+    font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
 }
 
 .example {
@@ -22,10 +22,12 @@ code {
     margin-top: 2em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-	border-top: 1px solid #333;
-	border-right: 1px solid #333;
-	border-left: 1px solid #333;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-left: 1px solid;
     height: 25px;
+    /*light theme*/
+    border-color: #333;
 }
 
 #osx {
@@ -33,11 +35,12 @@ code {
     margin: 0;
     padding: 0;
     float: left;
+    /*light theme*/
+    color: rgba(0,0,0,0);
 }
 #osx li {
     margin: 5px 0 0 5px;
     display: inline-block;
-    color: rgba(0,0,0,0);
 }
 
 #linux {
@@ -45,112 +48,48 @@ code {
     margin: 0;
     padding: 0;
     float: right;
+    /*light theme*/
+    color: #333;
 }
 #linux li {
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
     padding: 1px 10px 0 0;
     display: inline-block;
-    color: black;
 }
 
 .circle {
-    border: 1px solid #333;
+    border: 1px solid;
     width: 15px;
     height: 15px;
     border-radius: 100%;
+    /*light theme*/
+    border-color: #333;
 }
 
 
-/***********
- * display *
- ***********/
+/* display constants */
 #display {
-    background-color: #404040;
-    border: 1px solid ;
+    border: 1px solid;
     height: 250px;
+    /*light theme*/
+    border-color: #333;
 }
 
 #text {
     margin: 0.25em 0 0 0.5em;
-    color: #e6e6e6;
-    font-family: monospace;
+    font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
 }
 
+/* form/input */
 .mform {
     margin-top: 10px;
 }
-input[name=enter-text] {
-    font-family: monospace;
+.minput {
+    font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
 }
 
-/***************
- * span styles *
- ***************/
-/* for font color */
-.black {
-    color: #000000;
-}
-.red {
-    color: #97050A;
-}
-.green {
-    color: #11A515;
-}
-.yellow {
-    color: #989819;
-}
-.blue {
-    color: #140EB0;
-}
-.purple {
-    color: #B113B1;
-}
-.cyan {
-    color: #1DA6B1;
-}
-.white {
-    color: #BFBFBF;
-}
-
-/* for font decoration */
-.bold {
-    font-weight: bold;
-}
+/* theme constants */
 .under {
     text-decoration: underline;
-}
-
-/* for background color*/
-.bg-black {
-    background-color: #000000;
-    padding: 0 3px 0 3px;
-}
-.bg-red {
-    background-color: #97050A;
-    padding: 0 3px 0 3px;
-}
-.bg-green {
-    background-color: #11A515;
-    padding: 0 3px 0 3px;
-}
-.bg-yellow {
-    background-color: #989819;
-    padding: 0 3px 0 3px;
-}
-.bg-blue {
-    background-color: #140EB0;
-    padding: 0 3px 0 3px;
-}
-.bg-purple {
-    background-color: #B113B1;
-    padding: 0 3px 0 3px;
-}
-.bg-cyan {
-    background-color: #1DA6B1;
-    padding: 0 3px 0 3px;
-}
-.bg-white {
-    background-color: #BFBFBF;
-    padding: 0 3px 0 3px;
 }

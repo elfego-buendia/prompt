@@ -1,0 +1,98 @@
+/* zenburn */
+
+/* terminal */
+#display {
+    background-color: #3a3a3a;
+}
+#text {
+    color: #f8f5ed;
+}
+
+/* \e[0;xxm */
+.black {
+    color: #515151;
+}
+.red {
+    color: #d5a5a4;
+}
+.green {
+    color: #91ad92;
+}
+.yellow {
+    color: #e8d7ba;
+}
+.blue {
+    color: #747474;
+}
+.purple {
+    color: #e5c9a7;
+}
+.cyan {
+    color: #9cd4d8;
+}
+.white {
+    color: #f3f1da;
+}
+
+/* \e[1;xxm */
+.bold {
+    font-weight: bold;
+}
+.black.bold {
+    color: #747474;
+}
+.red.bold {
+    color: #c8bbba;
+}
+.green.bold {
+    color: #d3e897;
+}
+.yellow.bold {
+    color: #f1f0bf;
+}
+.blue.bold {
+    color: #88a7d5;
+}
+.purple.bold {
+    color: #dcceb8;
+}
+.cyan.bold {
+    color: #67e0d6;
+}
+.white.bold {
+    color: #f8f5ed;
+}
+
+/* \e[4;xxm */
+.bg-black {
+    background-color: #515151;
+    padding: 0 3px 0 3px;
+}
+.bg-red {
+    background-color: #d5a5a4;
+    padding: 0 3px 0 3px;
+}
+.bg-green {
+    background-color: #91ad92;
+    padding: 0 3px 0 3px;
+}
+.bg-yellow {
+    background-color: #e8d7ba;
+    padding: 0 3px 0 3px;
+}
+.bg-blue {
+    background-color: #747474;
+    padding: 0 3px 0 3px;
+}
+.bg-purple {
+    background-color: #e5c9a7;
+    padding: 0 3px 0 3px;
+}
+.bg-cyan {
+    background-color: #9cd4d8;
+    padding: 0 3px 0 3px;
+}
+.bg-white {
+    background-color: #f3f1da;
+    padding: 0 3px 0 3px;
+}

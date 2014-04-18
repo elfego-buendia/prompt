@@ -1,0 +1,22 @@
+@import url('/css/dark.bootstrap.min.css');
+
+body {
+    background-color: black;
+}
+
+/* terminal */
+#chrome {
+    border-color: white;
+}
+#display {
+    border-color: white;
+}
+#osx {
+    color: rgba(0,0,0,0);
+}
+#linux {
+    color: white;
+}
+.circle {
+    border-color: white;
+}

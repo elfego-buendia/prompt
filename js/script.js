@@ -1,5 +1,4 @@
 /*global $, console, parse*/
-var themes;
 
 function handleInput(input) {
     'use strict';
@@ -15,9 +14,19 @@ $(document).ready(function () {
         $('.circle').removeAttr('class');
     }
     
+    /* tentative */
     $('#terminal').addClass('animated fadeInDown');
     
-    var $input = $('input[name=enter-text]');
+    var $input = $('.minput');
+    
+    $('.ttheme').click(function () {
+        var path = 'css/term-themes/', dotCSS = '.css';
+        $('#term-theme').attr('href', path + $(this).text().toLowerCase() + dotCSS);
+    });
+    
+    $('.example').click(function () {
+        $input.val($(this).text());
+    });
     
     // enter event for input box
     // its supposed to get text parse
@@ -33,9 +42,5 @@ $(document).ready(function () {
     $('button#submit').click(function () {
         var input = $input.val();
         handleInput(input);
-    });
-    
-    $('.example').click(function () {
-        $input.val($(this).text());
     });
 });
