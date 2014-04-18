@@ -16,7 +16,7 @@ code {
 }
 
 /*********
- * chome *
+ * chrome *
  *********/
 #chrome {
     margin-top: 2em;
@@ -38,7 +38,7 @@ code {
     /*light theme*/
     color: rgba(0,0,0,0);
 }
-#osx li {
+#osx > li {
     margin: 5px 0 0 5px;
     display: inline-block;
 }
@@ -51,7 +51,7 @@ code {
     /*light theme*/
     color: #333;
 }
-#linux li {
+#linux > li {
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
     padding: 1px 10px 0 0;
