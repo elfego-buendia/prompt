@@ -27,9 +27,10 @@ code {
 	border-left: 1px solid;
     height: 25px;
     /*light theme*/
-    border-color: #333;
+    border-color: #777;
 }
 
+/* osx window chrome style*/
 #osx {
     list-style: none;
     margin: 0;
@@ -42,7 +43,16 @@ code {
     margin: 5px 0 0 5px;
     display: inline-block;
 }
+.circle {
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    /*light theme*/
+    border-color: #777;
+}
 
+/* every other os window chrome style*/
 #linux {
     list-style: none;
     margin: 0;
@@ -58,22 +68,13 @@ code {
     display: inline-block;
 }
 
-.circle {
-    border: 1px solid;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    /*light theme*/
-    border-color: #333;
-}
-
 
 /* display constants */
 #display {
     border: 1px solid;
     height: 250px;
     /*light theme*/
-    border-color: #333;
+    border-color: #777;
 }
 
 #text {
@@ -83,7 +84,7 @@ code {
 
 /* form/input */
 .mform {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .minput {
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;

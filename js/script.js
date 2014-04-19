@@ -25,15 +25,17 @@ $(document).ready(function () {
     }
     
     /* tentative */
-    $('#terminal').addClass('animated fadeInDown');
+    $('#terminal').addClass('animated fadeIn');
     
     var $input = $('.minput');
     
+    /* theme switcher */
     $('.ttheme').click(function () {
         var path = 'css/term-themes/', dotCSS = '.css';
         $('#term-theme').attr('href', path + $(this).text().toLowerCase() + dotCSS);
     });
     
+    /* use example event */
     $('.example').click(function () {
         $input.val($(this).text());
     });

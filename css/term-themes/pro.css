@@ -1,0 +1,104 @@
+/* default style*/
+
+/* terminal */
+#display {
+    background-color: rgba(0,0,0,.85);
+}
+#text {
+    color: #f4f4f4;
+}
+#text::selection {
+    background: #525252;
+}
+#text > span::selection {
+    background: #525252;
+}
+
+/* \e[0;xxm */
+.black {
+    color: #000000;
+}
+.red {
+    color: #97050A;
+}
+.green {
+    color: #11A515;
+}
+.yellow {
+    color: #989819;
+}
+.blue {
+    color: #140EB0;
+}
+.purple {
+    color: #B113B1;
+}
+.cyan {
+    color: #1DA6B1;
+}
+.white {
+    color: #BFBFBF;
+}
+
+/* \e[1;xxm */
+.bold {
+    font-weight: bold;
+}
+.black.bold {
+    color: #666;
+}
+.red.bold {
+    color: #e20d15;
+}
+.green.bold {
+    color: #1ad71f;
+}
+.yellow.bold {
+    color: #e4e52a;
+}
+.blue.bold {
+    color: #7119fc;
+}
+.purple.bold {
+    color: #e41ce3;
+}
+.cyan.bold {
+    color: #2be5e5;
+}
+.white.bold {
+    color: #e6e6e6;
+}
+
+/* \e[4;xxm */
+.bg-black {
+    background-color: #000000;
+    padding: 0 3px 0 3px;
+}
+.bg-red {
+    background-color: #97050A;
+    padding: 0 3px 0 3px;
+}
+.bg-green {
+    background-color: #11A515;
+    padding: 0 3px 0 3px;
+}
+.bg-yellow {
+    background-color: #989819;
+    padding: 0 3px 0 3px;
+}
+.bg-blue {
+    background-color: #140EB0;
+    padding: 0 3px 0 3px;
+}
+.bg-purple {
+    background-color: #B113B1;
+    padding: 0 3px 0 3px;
+}
+.bg-cyan {
+    background-color: #1DA6B1;
+    padding: 0 3px 0 3px;
+}
+.bg-white {
+    background-color: #BFBFBF;
+    padding: 0 3px 0 3px;
+}
