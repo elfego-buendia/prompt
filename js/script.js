@@ -16,6 +16,11 @@ $(document).ready(function () {
         $('.circle').removeAttr('class');
     }
     
+    /* autofocus only if on a non-mobile device*/
+    if (!navigator.appVersion.match(/iPhone|iPod|iPad|Windows Phone|webOS|Blackberry|Android/i)) {
+        $('.minput').focus();
+    }
+    
     /* allows standalone app to have black text in iOS7 and
        accomodates for the status bar by padding the nav */
     if (window.navigator.standalone) {
