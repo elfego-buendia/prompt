@@ -1,3 +1,4 @@
+/*jslint regexp: true*/
 /*global $, console, parse*/
 
 function handleInput(input) {
@@ -19,7 +20,7 @@ $(document).ready(function () {
        accomodates for the status bar by padding the nav */
     if (window.navigator.standalone) {
         $('nav.navbar.navbar-default').css('padding-top', '20px');
-        if (navigator.appVersion.match(/iP(hone|od|ad) OS 7/i)) {
+        if (navigator.appVersion.match(/iP(hone|od|ad).+?OS 7/)) {
             $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
         }
     }
