@@ -61,4 +61,10 @@ $(document).ready(function () {
         var input = $input.val();
         handleInput(input);
     });
+    
+    /* e */
+    $('#em').click(function () {
+        var first = 'elfego', second = 'buendia', third = 'x', end = '@gmail.com', subject = '?Subject=Prompt%20Editor';
+        $(this).attr('href', 'mailto:' + first + '.' + second + '.' + third + end + subject);
+    });
 });
