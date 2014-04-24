@@ -96,6 +96,17 @@
                 </div>
             </div>
             
+            <!-- info -->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="alert alert-info alert-dismissable exp">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <p>Copy string into your startup script .bashrc or .bash_profile.
+                        <code>export $PS1="<em>&lt;custom prompt string&gt;</em>"</code></p>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Examples -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -104,7 +115,12 @@
                             <h4>Examples <small>Click to use</small></h4>
                         </div>
                         <ul class="list-group">
+                            <li class="list-group-item example">\[\e[0;31;42m\]\d\[\e[0m\] \$></li>
+                            <li class="list-group-item example">\[\e[42m\] \[\e[0m\]\[\e[0;30;47m\]•\[\e[0m\]\[\e[41m\] \[\e[0m\] ></li>
+                            <li class="list-group-item example">\[\e[1;35m\]Super Bash\[\e[0m\] ~></li>
+                            <li class="list-group-item example">\[\e[4;36m\]\h \[\e[0m\]\[\e[4;37;46m\]\s\[\e[0m\]\[\e[4;36m\] >\[\e[0m\]</li>
                             <li class="list-group-item example">\[\e[0;31m\]\u\[\e[0m\] ::: \[\e[0;32m\]>\[\e[0m\]</li>
+                            <li class="list-group-item example" id="mario"><span>mario</span><span id="mcode">\[\e[0;37m\]■■■\[\e[0m\]\[\e[0;31m\]■■■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;31m\]■■■■■■■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■\[\e[0m\]\[\e[0;37m\]■■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;34m\]■■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■■■■\[\e[0m\]\[\e[0;30m\]■■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■■\[\e[0m\]\[\e[0;33m\]■■■■■■\[\e[0m\]\[\e[0;37m\]■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;31m\]■■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;31m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■■\[\e[0m\]\[\e[0;31m\]■■■■\[\e[0m\]\n\[\e[0;33m\]■■\[\e[0m\]\[\e[0;31m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\n\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;34m\]■■■■■■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\n\[\e[0;33m\]■■\[\e[0m\]\[\e[0;34m\]■■■■■■■■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;34m\]■■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■■\[\e[0m\] ></span></li>
                         </ul>
                     </div>
                 </div>

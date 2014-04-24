@@ -43,7 +43,11 @@ $(document).ready(function () {
     
     /* use example event */
     $('.example').click(function () {
-        $input.val($(this).text());
+        if ($(this).is('#mario')) {
+            $input.val($('#mcode').text());
+        } else {
+            $input.val($(this).text());
+        }
     });
     
     // enter event for input box

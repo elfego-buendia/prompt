@@ -14,12 +14,20 @@ code {
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
 }
 
+.exp {
+    font-size: 95%;
+}
+
 .example {
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
     cursor: pointer;
 }
 .example:hover {
     color: #498cc8;
+}
+
+#mcode {
+    display: none;
 }
 
 /*********
@@ -79,12 +87,13 @@ code {
 /* display constants */
 #display {
     border: 1px solid;
-    height: 250px;
+    min-height: 250px;
     /*light theme*/
     border-color: #777;
 }
 
 #text {
+    white-space: pre-wrap;
     margin: 5px 0 0 10px;
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
 }
