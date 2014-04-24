@@ -1,5 +1,5 @@
 /*jslint regexp: true*/
-/*global $, console, parse*/
+/*global $, console, window, parse*/
 
 function handleInput(input) {
     'use strict';
@@ -56,6 +56,7 @@ $(document).ready(function () {
     $input.keypress(function (event) {
         if (event.which === 13) {
             handleInput($(this).val());
+            window.scrollTo(0, 0);
             event.preventDefault();
         }
     });
@@ -63,6 +64,7 @@ $(document).ready(function () {
     // click event for button
     $('button#submit').click(function () {
         var input = $input.val();
+        window.scrollTo(0, 0);
         handleInput(input);
     });
     
