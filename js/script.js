@@ -48,6 +48,7 @@ $(document).ready(function () {
         } else {
             $input.val($(this).text());
         }
+        window.scrollTo(0, 0);
     });
     
     // enter event for input box
@@ -56,7 +57,6 @@ $(document).ready(function () {
     $input.keypress(function (event) {
         if (event.which === 13) {
             handleInput($(this).val());
-            window.scrollTo(0, 0);
             event.preventDefault();
         }
     });
@@ -64,7 +64,6 @@ $(document).ready(function () {
     // click event for button
     $('button#submit').click(function () {
         var input = $input.val();
-        window.scrollTo(0, 0);
         handleInput(input);
     });
     
