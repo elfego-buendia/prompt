@@ -2,15 +2,14 @@
 
 /* terminal */
 #display {
+    color: #4c2f2e;
     background-color: #dfdbc4;
 }
-#text {
-    color: #4c2f2e;
-}
-#text::selection {
+
+.term-text::selection {
     background: rgba(134,133,100,.76);
 }
-#text > span::selection {
+.term-text > span::selection {
     background: rgba(134,133,100,.76);
 }
 

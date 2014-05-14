@@ -2,10 +2,8 @@
 
 /* terminal */
 #display {
+    color: black;
     background-color: #fdf3a0;
-}
-#text {
-    color: #black;
 }
 
 /* \e[0;xxm */

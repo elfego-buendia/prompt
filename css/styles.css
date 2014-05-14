@@ -92,7 +92,7 @@ code {
     border-color: #777;
 }
 
-#text {
+.term-text {
     white-space: pre-wrap;
     margin: 5px 0 0 10px;
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
