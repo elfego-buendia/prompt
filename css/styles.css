@@ -88,6 +88,7 @@ code {
 #display {
     border: 1px solid;
     min-height: 250px;
+    padding-bottom: 10px;
     /*light theme*/
     border-color: #777;
 }

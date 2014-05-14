@@ -73,7 +73,9 @@
                             </ul>
                         </div>
                     <div id="display">
-                        <p class="term-text" id="text">prompt ></p>
+                        <p class="term-text"><span class="normal green">elfego</span><span class="normal white"> ::: </span><span class="normal red">[Development></span> cat select.sh<br>select i in eeny meeny miny moe<br>do<br>echo "You chose $i"<br>done</p>
+                        <p class="term-text"><span class="normal green">elfego</span><span class="normal white"> ::: </span><span class="normal red">[Development></span> bash select.sh<br>1) eeny<br>2) meeny<br>3) miny<br>4) moe</p>
+                        <p class="term-text"><span class="text">#? </span>1<br>You chose eeny<br><span class="text">#? </span>2<br>You chose miny<br><span class="text">#? </span></p>
                     </div>
                     </div>
                 </div>
@@ -101,7 +103,7 @@
                     <div class="alert alert-info alert-dismissable exp">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                         <p>Copy string into your startup script .bashrc or .bash_profile.
-                        <code>export PS1="<em>&lt;custom prompt string&gt;</em>"</code></p>
+                        <code>export PS3="<em>&lt;custom prompt string&gt;</em>"</code></p>
                     </div>
                 </div>
             </div>
@@ -114,7 +116,10 @@
                             <h4>Examples <small>Click to use</small></h4>
                         </div>
                         <ul class="list-group">
-                            <li class="list-group-item example">\[\e[0;32m\]\u\[\e[0m\]\[\e[0;37m\] ::: \[\e[0m\]\[\e[0;31m\][\W>\[\e[0m\]</li>
+                            <li class="list-group-item example">select? </li>
+                            <li class="list-group-item example">\[\e[0;31m\]^>?\[\e[0m\] </li>
+                            <li class="list-group-item example">\[\e[4;35;47m\]please make selection out of the above :\[\e[0m\]</li>
+                            <li class="list-group-item example">\[\e[1;36m\]\u\[\e[0m\] choose!:</li>
                     </div>
                 </div>
             </div>

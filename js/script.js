@@ -4,7 +4,7 @@
 function handleInput(input) {
     'use strict';
     var pHTML = parse(input);
-    $('#text').html(pHTML);
+    $('.text').html(pHTML);
 }
 
 $(document).ready(function () {
