@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Prompt Statement Editor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="canonical" href="http://www.prompteditor.com/oops">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/frameworks/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/term-themes/default.css" id="term-theme">
+        
+        <!-- mobile -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="img/touch-icon-iphone-60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad-76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina-120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad-retina-152.png">
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Prompt Editor</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">PS1</a></li>
+                        <li><a href="http://www.prompteditor.com/pstwo">PS2</a></li>
+                        <li><a href="http://www.prompteditor.com/psthree">PS3</a></li>
+                        <li><a href="http://www.prompteditor.com/psfour">PS4</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- page themes? -->
+                        <!-- term themes  -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Terminal <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="ttheme" href="#">Default</a></li>
+                                <li><a class="ttheme" href="#">Grass</a></li>
+                                <li><a class="ttheme" href="#">Homebrew</a></li>
+                                <li><a class="ttheme" href="#">Man Page</a></li>
+                                <li><a class="ttheme" href="#">Novel</a></li>
+								<li><a class="ttheme" href="#">Ocean</a></li>
+								<li><a class="ttheme" href="#">Pro</a></li>
+								<li><a class="ttheme" href="#">Red Sands</a></li>
+                                <li><a class="ttheme" href="#">Zenburn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+			<!-- Terminal -->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="terminal">
+                        <div id="chrome">
+                            <ul id="osx">
+                                <li><div class="circle">-</div></li>
+                                <li><div class="circle">+</div></li>
+                                <li><div class="circle">x</div></li>
+                            </ul>
+                        </div>
+                    <div id="display">
+                        <p id="text">404 > :/</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="footer">
+            <div class="container footer-cont">
+                <p class="text-muted footer-txt">© 2014 • <a href="#" id="em" target="_top">José Martínez</a> • Bootstrap • jQuery</p>
+            </div>
+        </div>
+        
+        <!-- scripts at the end to speed up page load =================================================-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-50369803-1', 'prompteditor.com');
+            ga('send', 'pageview');
+        </script>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="js/AEC.js"></script>
+        <script type="application/javascript" src="js/parse.js"></script>
+        <script type="application/javascript" src="js/script.js"></script>
+    </body>
+</html>
