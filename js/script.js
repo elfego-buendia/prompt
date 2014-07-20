@@ -1,12 +1,6 @@
 /*jslint regexp: true*/
 /*global $, console, window, parse*/
 
-function handleInput(input) {
-    'use strict';
-    var pHTML = parse(input);
-    $('.text').html(pHTML);
-}
-
 $(document).ready(function () {
     'use strict';
     
@@ -38,18 +32,24 @@ $(document).ready(function () {
     /* theme switcher */
     $('.ttheme').click(function () {
         var path = 'css/term-themes/', dotCSS = '.css';
-        $('#term-theme').attr('href', path + $(this).text().toLowerCase() + dotCSS);
+        $('#theme-css').attr('href', path + $(this).text().toLowerCase() + dotCSS);
     });
     
     /* use example event */
     $('.example').click(function () {
         if ($(this).is('#mario')) {
-            $input.val($('#mcode').text());
+            $input.val($('#mario-code').text());
         } else {
             $input.val($(this).text());
         }
         window.scrollTo(0, 0);
     });
+    
+    function handleInput(input) {
+        'use strict';
+        var pHTML = parse(input);
+        $('.text').html(pHTML);
+    }
     
     // enter event for input box
     // its supposed to get text parse

@@ -10,11 +10,13 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", 'Roboto', sans-serif;
 }
 
+/* font preferences for all code tags */
 code {
     font-family: "Andale Mono", Menlo, Monaco, Consolas, monospace;
 }
 
-.exp {
+/* font change to fix size issues with mobile */
+.alert-info {
     font-size: 95%;
 }
 
@@ -26,7 +28,7 @@ code {
     color: #498cc8;
 }
 
-#mcode {
+#mario-code {
     display: none;
 }
 
@@ -37,9 +39,9 @@ code {
     margin-top: 30px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-	border-top: 1px solid;
-	border-right: 1px solid;
-	border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
     height: 25px;
     /*light theme*/
     border-color: #777;

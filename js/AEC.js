@@ -8,16 +8,16 @@ function AEC(s) {
         colr = null,
         bkgc = null,
         clss = [],
-		segmentArray = s.split(';'),
+        segmentArray = s.split(';'),
         numberOfSegments = segmentArray.length,
         firstSegment = null,
         secondSegment = null,
         thirdSegment = null;
-			
-	// assign variables according to the number of modifiers present
-	// 3 = [bold/underline] + overall color + background color
-	// 2 = [bold/underline] + overall color
-	// 1 = background color only
+        
+    // assign variables according to the number of modifiers present
+    // 3 = [bold/underline] + overall color + background color
+    // 2 = [bold/underline] + overall color
+    // 1 = background color only
     if (numberOfSegments === 3) {
         firstSegment = segmentArray[0];
         secondSegment = segmentArray[1];
@@ -26,29 +26,29 @@ function AEC(s) {
         modi = MODIFI[firstSegment];
         colr = COLORS[secondSegment[secondSegment.length - 1]];
         bkgc = BGADD + COLORS[thirdSegment[thirdSegment.length - 2]];
-		
-		clss.push(modi);
-		clss.push(colr);
-		clss.push(bkgc);
+        
+        clss.push(modi);
+        clss.push(colr);
+        clss.push(bkgc);
     } else if (numberOfSegments === 2) {
         firstSegment = segmentArray[0];
         secondSegment = segmentArray[1];
         
         modi = MODIFI[firstSegment];
         colr = COLORS[secondSegment[secondSegment.length - 2]];
-		
-		clss.push(modi);
-		clss.push(colr);
+        
+        clss.push(modi);
+        clss.push(colr);
     } else if (numberOfSegments === 1) {
         thirdSegment = segmentArray[0];
         bkgc = BGADD + COLORS[thirdSegment[thirdSegment.length - 2]];
-		
-		clss.push(bkgc);
+        
+        clss.push(bkgc);
     } else {
-    	console.log('Error creating AEC object.')
+        console.log('Error creating AEC object.')
     }
     
-	// methods to access private variables (read only)
+    // methods to access private variables (read only)
     this.getModi = function () {
         return modi;
     };

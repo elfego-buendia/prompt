@@ -4,12 +4,12 @@
         <title>Prompt Statement Editor</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="canonical" href="http://www.prompteditor.com">
+        <link rel="canonical" href="http://www.prompteditor.com">
         <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/frameworks/animate.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="css/term-themes/default.css" id="term-theme">
+        <link rel="stylesheet" type="text/css" href="css/term-themes/default.css" id="theme-css">
         
         <!-- mobile -->
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,9 +49,9 @@
                                 <li><a class="ttheme" href="#">Homebrew</a></li>
                                 <li><a class="ttheme" href="#">Man Page</a></li>
                                 <li><a class="ttheme" href="#">Novel</a></li>
-								<li><a class="ttheme" href="#">Ocean</a></li>
-								<li><a class="ttheme" href="#">Pro</a></li>
-								<li><a class="ttheme" href="#">Red Sands</a></li>
+                                <li><a class="ttheme" href="#">Ocean</a></li>
+                                <li><a class="ttheme" href="#">Pro</a></li>
+                                <li><a class="ttheme" href="#">Red Sands</a></li>
                                 <li><a class="ttheme" href="#">Zenburn</a></li>
                             </ul>
                         </li>
@@ -61,7 +61,7 @@
         </nav>
         
         <div class="container">
-			<!-- Terminal -->
+            <!-- Terminal -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div id="terminal">
@@ -78,8 +78,8 @@
                     </div>
                 </div>
             </div>
-			
-			<!-- Form -->
+            
+            <!-- Form -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">                    
                     <form role="form" class="inline-form mform" onsubmit="false">
@@ -98,7 +98,7 @@
             <!-- info -->
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="alert alert-info alert-dismissable exp">
+                    <div class="alert alert-info alert-dismissable">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                         <p>PS1 is the default prompt used for interaction.</p>
                         <p>Copy string into your startup script .bashrc or .bash_profile.
@@ -121,106 +121,106 @@
                             <li class="list-group-item example">\[\e[1;35m\]Super Bash\[\e[0m\] ~> </li>
                             <li class="list-group-item example">\[\e[4;37;44m\]*\[\e[0m\]\[\e[4;31;47m\]==\[\e[0m\] > </li>
                             <li class="list-group-item example">\[\e[4;36m\]\h \[\e[0m\]\[\e[4;37;46m\]\s\[\e[0m\]\[\e[4;36m\] >\[\e[0m\] </li>
-                            <li class="list-group-item example" id="mario"><span>mario</span><span id="mcode">\[\e[0;37m\]■■■\[\e[0m\]\[\e[0;31m\]■■■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;31m\]■■■■■■■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■\[\e[0m\]\[\e[0;37m\]■■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;34m\]■■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■■■■\[\e[0m\]\[\e[0;30m\]■■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■■\[\e[0m\]\[\e[0;33m\]■■■■■■\[\e[0m\]\[\e[0;37m\]■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;31m\]■■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;31m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■■\[\e[0m\]\[\e[0;31m\]■■■■\[\e[0m\]\n\[\e[0;33m\]■■\[\e[0m\]\[\e[0;31m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\n\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;34m\]■■■■■■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\n\[\e[0;33m\]■■\[\e[0m\]\[\e[0;34m\]■■■■■■■■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;34m\]■■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■■\[\e[0m\] > </span></li>
+                            <li class="list-group-item example" id="mario"><span>mario</span><span id="mario-code">\[\e[0;37m\]■■■\[\e[0m\]\[\e[0;31m\]■■■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;31m\]■■■■■■■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■\[\e[0m\]\[\e[0;37m\]■■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;34m\]■■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;30m\]■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;33m\]■■■■\[\e[0m\]\[\e[0;30m\]■■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;37m\]■■■\[\e[0m\]\[\e[0;33m\]■■■■■■\[\e[0m\]\[\e[0;37m\]■■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;31m\]■■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;31m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■■\[\e[0m\]\[\e[0;31m\]■■■■\[\e[0m\]\n\[\e[0;33m\]■■\[\e[0m\]\[\e[0;31m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■\[\e[0m\]\[\e[0;31m\]■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\n\[\e[0;33m\]■■■\[\e[0m\]\[\e[0;34m\]■■■■■■\[\e[0m\]\[\e[0;33m\]■■■\[\e[0m\]\n\[\e[0;33m\]■■\[\e[0m\]\[\e[0;34m\]■■■■■■■■\[\e[0m\]\[\e[0;33m\]■■\[\e[0m\]\n\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■\[\e[0m\]\n\[\e[0;37m\]■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■\[\e[0m\]\[\e[0;37m\]■\[\e[0m\]\n\[\e[0;34m\]■■■■\[\e[0m\]\[\e[0;37m\]■■■■\[\e[0m\]\[\e[0;34m\]■■■■\[\e[0m\] > </span></li>
                         </ul>
                     </div>
                 </div>
             </div>
-			
-			<!-- Reference -->
+            
+            <!-- Reference -->
             <div class="row">
                 <div class="col-md-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4>Variables</h4>
-						</div>
-		                <ul class="list-group">
-		                	<li class="list-group-item"><code>\[</code> - to begin color code sequence</li>
-		                    <li class="list-group-item"><code>\]</code> - to end color code sequence</li>
-		                    <li class="list-group-item"><code>\u</code> - user</li>
-		                    <li class="list-group-item"><code>\w</code> - current working directory</li>
-		                    <li class="list-group-item"><code>\W</code> - current working directory (short)</li>
-		                    <li class="list-group-item"><code>\h</code> - hostname</li>
-		                    <li class="list-group-item"><code>\d</code> - date</li>
-		                    <li class="list-group-item"><code>\j</code> - current shell jobs</li>
-		                    <li class="list-group-item"><code>\s</code> - shell name</li>
-		                    <li class="list-group-item"><code>\t</code> - time 24h HH:MM:SS</li>
-							<li class="list-group-item"><code>\T</code> - time 12h HH:MM:SS</li>
-		                    <li class="list-group-item"><code>\@</code> - time 12h am\pm</li>
-		            		<li class="list-group-item"><code>\!</code> - history number</li>
-		                    <li class="list-group-item"><code>\#</code> - command number</li>
-		                    <li class="list-group-item"><code>\$</code> - display # if root, $ otherwise</li>
-		                    <li class="list-group-item"><code>\n</code> - newline</li>
-		                </ul>
-					</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Variables</h4>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><code>\[</code> - to begin color code sequence</li>
+                            <li class="list-group-item"><code>\]</code> - to end color code sequence</li>
+                            <li class="list-group-item"><code>\u</code> - user</li>
+                            <li class="list-group-item"><code>\w</code> - current working directory</li>
+                            <li class="list-group-item"><code>\W</code> - current working directory (short)</li>
+                            <li class="list-group-item"><code>\h</code> - hostname</li>
+                            <li class="list-group-item"><code>\d</code> - date</li>
+                            <li class="list-group-item"><code>\j</code> - current shell jobs</li>
+                            <li class="list-group-item"><code>\s</code> - shell name</li>
+                            <li class="list-group-item"><code>\t</code> - time 24h HH:MM:SS</li>
+                            <li class="list-group-item"><code>\T</code> - time 12h HH:MM:SS</li>
+                            <li class="list-group-item"><code>\@</code> - time 12h am\pm</li>
+                            <li class="list-group-item"><code>\!</code> - history number</li>
+                            <li class="list-group-item"><code>\#</code> - command number</li>
+                            <li class="list-group-item"><code>\$</code> - display # if root, $ otherwise</li>
+                            <li class="list-group-item"><code>\n</code> - newline</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-2">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-		                    <h4>Normal</h4>
-						</div>
-		                <ul class="list-group">
-		                	<li class="list-group-item"><code>\e[0;30m</code> - <span class="black">black</span></li>
-	                        <li class="list-group-item"><code>\e[0;31m</code> - <span class="red">red</span></li>
-	                        <li class="list-group-item"><code>\e[0;32m</code> - <span class="green">green</span></li>
-	                        <li class="list-group-item"><code>\e[0;33m</code> - <span class="yellow">yellow</span></li>
-	                        <li class="list-group-item"><code>\e[0;34m</code> - <span class="blue">blue</span></li>
-	                        <li class="list-group-item"><code>\e[0;35m</code> - <span class="purple">purple</span></li>
-	                        <li class="list-group-item"><code>\e[0;36m</code> - <span class="cyan">cyan</span></li>
-	                        <li class="list-group-item"><code>\e[0;37m</code> - <span class="white">white</span></li>
-		                </ul>
-					</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Normal</h4>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><code>\e[0;30m</code> - <span class="black">black</span></li>
+                            <li class="list-group-item"><code>\e[0;31m</code> - <span class="red">red</span></li>
+                            <li class="list-group-item"><code>\e[0;32m</code> - <span class="green">green</span></li>
+                            <li class="list-group-item"><code>\e[0;33m</code> - <span class="yellow">yellow</span></li>
+                            <li class="list-group-item"><code>\e[0;34m</code> - <span class="blue">blue</span></li>
+                            <li class="list-group-item"><code>\e[0;35m</code> - <span class="purple">purple</span></li>
+                            <li class="list-group-item"><code>\e[0;36m</code> - <span class="cyan">cyan</span></li>
+                            <li class="list-group-item"><code>\e[0;37m</code> - <span class="white">white</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-2">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4>Bright / Bold</h4>
-						</div>
-	                    <ul class="list-group">
-	                        <li class="list-group-item"><code>\e[1;30m</code> - <span class="bold black">black</span></li>
-	                        <li class="list-group-item"><code>\e[1;31m</code> - <span class="bold red">red</span></li>
-	                        <li class="list-group-item"><code>\e[1;32m</code> - <span class="bold green">green</span></li>
-	                        <li class="list-group-item"><code>\e[1;33m</code> - <span class="bold yellow">yellow</span></li>
-	                        <li class="list-group-item"><code>\e[1;34m</code> - <span class="bold blue">blue</span></li>
-	                        <li class="list-group-item"><code>\e[1;35m</code> - <span class="bold purple">purple</span></li>
-	                        <li class="list-group-item"><code>\e[1;36m</code> - <span class="bold cyan">cyan</span></li>
-	                        <li class="list-group-item"><code>\e[1;37m</code> - <span class="bold white">white</span></li>
-	                    </ul>
-					</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Bright / Bold</h4>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><code>\e[1;30m</code> - <span class="bold black">black</span></li>
+                            <li class="list-group-item"><code>\e[1;31m</code> - <span class="bold red">red</span></li>
+                            <li class="list-group-item"><code>\e[1;32m</code> - <span class="bold green">green</span></li>
+                            <li class="list-group-item"><code>\e[1;33m</code> - <span class="bold yellow">yellow</span></li>
+                            <li class="list-group-item"><code>\e[1;34m</code> - <span class="bold blue">blue</span></li>
+                            <li class="list-group-item"><code>\e[1;35m</code> - <span class="bold purple">purple</span></li>
+                            <li class="list-group-item"><code>\e[1;36m</code> - <span class="bold cyan">cyan</span></li>
+                            <li class="list-group-item"><code>\e[1;37m</code> - <span class="bold white">white</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-2">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4>Underlined</h4>
-						</div>
-	                    <ul class="list-group">
-	                        <li class="list-group-item"><code>\e[4;30m</code> - <span class="under black">black</span></li>
-	                        <li class="list-group-item"><code>\e[4;31m</code> - <span class="under red">red</span></li>
-	                        <li class="list-group-item"><code>\e[4;32m</code> - <span class="under green">green</span></li>
-	                        <li class="list-group-item"><code>\e[4;33m</code> - <span class="under yellow">yellow</span></li>
-	                        <li class="list-group-item"><code>\e[4;34m</code> - <span class="under blue">blue</span></li>
-	                        <li class="list-group-item"><code>\e[4;35m</code> - <span class="under purple">purple</span></li>
-	                        <li class="list-group-item"><code>\e[4;36m</code> - <span class="under cyan">cyan</span></li>
-	                        <li class="list-group-item"><code>\e[4;37m</code> - <span class="under white">white</span></li>
-	                    </ul>
-					</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Underlined</h4>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><code>\e[4;30m</code> - <span class="under black">black</span></li>
+                            <li class="list-group-item"><code>\e[4;31m</code> - <span class="under red">red</span></li>
+                            <li class="list-group-item"><code>\e[4;32m</code> - <span class="under green">green</span></li>
+                            <li class="list-group-item"><code>\e[4;33m</code> - <span class="under yellow">yellow</span></li>
+                            <li class="list-group-item"><code>\e[4;34m</code> - <span class="under blue">blue</span></li>
+                            <li class="list-group-item"><code>\e[4;35m</code> - <span class="under purple">purple</span></li>
+                            <li class="list-group-item"><code>\e[4;36m</code> - <span class="under cyan">cyan</span></li>
+                            <li class="list-group-item"><code>\e[4;37m</code> - <span class="under white">white</span></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-2">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h4>Background</h4>
-						</div>
-						<ul class="list-group">
-							<li class=list-group-item><code>\e[40m</code> - <span class="bg-black white">black</span></li>
-							<li class=list-group-item><code>\e[41m</code> - <span class="bg-red white">red</span></li>
-							<li class=list-group-item><code>\e[42m</code> - <span class="bg-green white">green</span></li>
-							<li class=list-group-item><code>\e[43m</code> - <span class="bg-yellow">yellow</span></li>
-							<li class=list-group-item><code>\e[44m</code> - <span class="bg-blue white">blue</span></li>
-							<li class=list-group-item><code>\e[45m</code> - <span class="bg-purple white">purple</span></li>
-							<li class=list-group-item><code>\e[46m</code> - <span class="bg-cyan white">cyan</span></li>
-							<li class=list-group-item><code>\e[47m</code> - <span class="bg-white">white</span></li>
-						</ul>
-					</div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Background</h4>
+                        </div>
+                        <ul class="list-group">
+                            <li class=list-group-item><code>\e[40m</code> - <span class="bg-black white">black</span></li>
+                            <li class=list-group-item><code>\e[41m</code> - <span class="bg-red white">red</span></li>
+                            <li class=list-group-item><code>\e[42m</code> - <span class="bg-green white">green</span></li>
+                            <li class=list-group-item><code>\e[43m</code> - <span class="bg-yellow">yellow</span></li>
+                            <li class=list-group-item><code>\e[44m</code> - <span class="bg-blue white">blue</span></li>
+                            <li class=list-group-item><code>\e[45m</code> - <span class="bg-purple white">purple</span></li>
+                            <li class=list-group-item><code>\e[46m</code> - <span class="bg-cyan white">cyan</span></li>
+                            <li class=list-group-item><code>\e[47m</code> - <span class="bg-white">white</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
