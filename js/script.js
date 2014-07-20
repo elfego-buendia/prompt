@@ -17,11 +17,17 @@ $(document).ready(function () {
     
     /* allows standalone app to have black text in iOS7 and
        accomodates for the status bar by padding the nav */
-    if (window.navigator.standalone) {
+    if (("standalone" in window.navigator) && window.navigator.standalone) {
         $('nav.navbar.navbar-default').css('padding-top', '20px');
         if (navigator.appVersion.match(/iP(hone|od|ad).+?OS 7/)) {
             $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
         }
+        
+        /* keep the standalone app in standalone mode. no safari launch */
+        $('.navbar-nav a').click(function (event) {
+            event.preventDefault();
+            location.href = $(event.target).attr('href');
+        });
     }
     
     /* tentative */
